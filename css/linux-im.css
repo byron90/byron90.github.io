@@ -1,0 +1,204 @@
+
+@font-face {
+  font-family: 'FZYanSongS';
+  src: url('/font/fzyansongs.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    /*font-family: "PT Serif",Georgia,Times,"Times New Roman","Songti SC","Hiragino Mincho ProN",serif;*/
+    font-family: STFangSong, Helvetica, Arial, Vernada, Tahoma, STXihei, "Microsoft YaHei", "Songti SC", SimSun, Heiti, sans-serif;
+    background-color: #F0EFE7;
+}
+
+h4, h5 {
+  font-size: 130%;
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 0 0 10px #555;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 0 10px #4A4A4A;
+}
+
+hr {
+  margin-top: 30px;
+  border: 1px #FAFAFA solid;
+}
+.site {
+    text-align: justify;
+    width: 800px;
+    margin: 2em auto 1em auto;
+    line-height: 1.5em;
+    padding: 2em;
+    background-color: #FCFCFA;
+    border-radius: 6px;
+}
+
+.title a{
+    font-family: 'FZYanSongS';
+    color: #EE4F3A;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.title small {
+    color: #919191;
+    font-size: 16px;
+}
+
+.menu {
+    padding-top: 20px;
+}
+
+a {
+    color: #000000;
+ }
+
+#post a:link {
+    text-decoration: none;
+    border-bottom: 1px dashed #1d8cbd;
+}
+
+#post a:hover {
+  color: #0F3351;
+}
+
+
+.post-list-ul li {
+    line-height: 1.75em;
+}
+
+.post-list-ul a:link {
+    text-decoration: none;
+}
+
+.post-list-ul a:hover {
+    color: #0F3351;
+}
+
+.post-list-ul {
+    list-style-type: none;
+    margin-bottom: -15px;
+    padding: 0;
+    font-size:16px;
+}
+
+.post-list-ul>li span {
+    color: #aaa;
+    font-size: 100%;
+    margin-right: 6px;
+}
+
+.post-content {
+  padding-top: 10px;
+}
+
+/*
+ * POST Main
+ */
+#post {
+    position: relative;
+    word-break: break-all;
+    min-height: 300px;
+    color: #2f2f2f;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+#post h1,h2,h3 {
+    font-family: 'FZYanSongS';
+    font-size: 35px;
+    word-break: break-all;
+    line-height: 1.5;
+    color: #EE4F3A;
+}
+
+.date {
+    color: #aaa;
+    font-size: 15px;
+    border-bottom: 1px #F2F2F2 solid;
+    padding-bottom: 20px;
+}
+
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: px;
+  border: 1px dashed #DDDEDF;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* standard */
+#post pre {
+  font-family: Consolas, "DejaVu Sans Mono", "Lucida Console", Monaco, Andale Mono, "MS Gothic", monospace;
+  font-size: 13px;
+  background-color: #FFF;
+  padding: 0 .4em;
+  overflow: auto;
+  margin: 1em 0;
+  padding: 5px 0 5px 10px;
+  border: 1px #BBB solid;
+}
+
+#post pre:hover {
+  border: 1px #383838 solid;
+}
+
+#post code {
+  padding: 0 .2em;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+#post pre code {
+  font-family: Consolas, "DejaVu Sans Mono", "Lucida Console", Monaco, Andale Mono, "MS Gothic", monospace;
+  color: #000;
+  background-color: #FFF;
+  padding: 0 .2em;
+  border: none;
+  white-space: pre;
+}
+
+
+
+.footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 2px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.contact {
+  float: left;
+  margin-right: 3em;
+  color: #333;
+}
+
+.contact p {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.contact a {
+  color: #000000;
+  text-decoration: none;
+}
+
+strong {
+  color: #EE4F3A;
+  font-family: 'FZYanSongS';
+}

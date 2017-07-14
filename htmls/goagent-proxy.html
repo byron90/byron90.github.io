@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>GoAgent与AutoProxy故障解决 - ByronTech</title>
+    <meta name="description" content="Do something interesting."/>
+    <link rel="stylesheet" href="../css/linux-im.css" type="text/css" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="post-content">
+        <div id="post">
+          <h1 id="goagentautoproxy">GoAgent与AutoProxy故障解决</h1>
+<p class="date">20 May 2014 - ByronTech</p>
+
+<p>起因是需要翻墙上twitter，用的是GoAgent加AutoProxy，但好长时间没上，现在居然上不了了。</p>
+
+<ul>
+  <li>
+    <p>第一步：解决GoAgent的ssl证书问题
+也不清楚从哪一版开始需要手工导入证书到浏览器，可能一开始就需要吧，只是自己不知道。
+火狐“选项”–&gt;高级–&gt;证书–&gt;查看证书–&gt;导入–&gt;选择“GoAgent目录/Local/certs”</p>
+  </li>
+  <li>
+    <p>第二步：解决AutoProxy插件的订阅源问题
+订阅源是AutoProxy翻墙名单的来源，之前添加完订阅源是可以看到规则列表的，还可以编辑规则，
+最近更新了火狐，发现规则列表是空的，没办法手工添加规则，这是比较麻烦的事儿。假设某个
+站需要翻墙，不能编辑规则的话，只能先打开失败下，然后选择“对该站启用代理”AutoProxy才
+会记忆该站。
+解决的办法是安装修改版本的AutoProxy插件，这个版本的插件是针对AutoProxy的安全修改，开
+源的，代码托管在<a href="https://github.com/agunchan/autoproxy" title="AutoProxy修改版GitHub地址">github</a>上，下载链接<a href="http://fxthunder.com/blog/archives/2866" title="AutoProxy修改版下载链接">点这里</a>。</p>
+  </li>
+</ul>
+
+
+        </div>
+      </div>
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'byron';
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="contact">
+          <p>
+            <a href="/" style="text-decoration: none; margin-right: 5px;">Index</a> |&nbsp;
+            <a href="/feed.xml" target="_blank" style="text-decoration: none; margin-right: 5px;">RSS</a> |&nbsp;
+            <a href="http://weibo.com/zjbzy1314" target="_blank" style="text-decoration: none; margin-right: 5px;">Weibo</a> |&nbsp;
+            <a href="mailto:byron02212012@gmail.com">byron02212012@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!--    <div style="display: none;">
+      <script src="http://s4.cnzz.com/z_stat.php?id=1254574847&web_id=1254574847" language="JavaScript"></script>
+    </div>
+-->
+  </body>
+</html>

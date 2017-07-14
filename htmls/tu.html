@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>吐学 - ByronTech</title>
+    <meta name="description" content="Do something interesting."/>
+    <link rel="stylesheet" href="../css/linux-im.css" type="text/css" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="post-content">
+        <div id="post">
+          <h1 id="section">吐学</h1>
+<p class="date">11 Nov 2015 - ByronTech</p>
+
+<p>边吐槽，边学习，故名“吐学”。
+主要记录各种小坑、小Bug带来的思考和积累。
+持续更新中……</p>
+
+<hr />
+<p><strong>2015-11-11   jquerymobile listview demo的一个bug</strong></p>
+
+<p>listview中的一个a标签，点击后，会将被跳转的页面嵌入当前页面下。</p>
+
+<p>解决办法：a标签添加data-ajax=”false” 属性</p>
+
+<hr />
+<p><strong>2015-11-03   c的strncmp的函数</strong></p>
+
+<p>为了防止访问越界，往往会忽视两个字符串只是前缀相等的情况</p>
+
+<hr />
+<p><strong>2015-11-02   HTML的编码</strong></p>
+
+<p>HTML的charset=gb2312并不是说整个HTML页面都是gb2312编码，只是中间有gb2312的中文而已，比如qq.com</p>
+
+<hr />
+<p><strong>2015-9-26   解决windows10 开始菜单、系统状态图标不可用</strong></p>
+
+<p>打开powershell，输入命令：
+	Get-AppxPackage | % { Add-AppxPackage -DisableDevelopmentMode -Register “$($_.InstallLocation)\AppxManifest.xml” -verbose }
+等待命令执行完毕，不用重启，问题即解决。</p>
+
+<p>这条命令是将windows的Appx全部重新注册。</p>
+
+<p>From Baidu：http://www.cr173.com/html/66828_1.html</p>
+
+<hr />
+<p><strong>2015-1-22 Raspbian上安装mongodb</strong></p>
+
+<p>懒人模式：https://github.com/svvitale/mongo4pi</p>
+
+<p>git clone的时候费点时间而已，clone后直接./install.sh，分分钟搞定，不用自己编译一堆东西喽</p>
+
+<hr />
+<p><strong>2015-1-22 Raspbian上的goagent</strong></p>
+
+<p>在raspbian上goagent的配置与win8的一样，但用的时候报错：</p>
+
+<p>Your client does not have permission to get URL /gh/ from this server，</p>
+
+<p>请空自定义的hosts后，问题解决。。。。</p>
+
+<hr />
+<p><strong>2014-11-04 windows的ssh key管理</strong></p>
+
+<p>创建一个rsa key，用在git操作上，必须将2个key文件放在.ssh下，替换之前的文件？</p>
+
+<p>必须在git bash下操作git，在cmd下key无效？</p>
+
+<hr />
+<p><strong>2014-11-03 xcode6下，为UIViewController子类增加自定义init函数</strong></p>
+
+<p>UIViewController类树复杂，一旦自定义init函数，需要同时实现三个init函数，缺少任一个都会报错：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>required init(coder aDecoder: NSCoder!) {
+    super.init(coder: aDecoder)
+}
+
+override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+    subview = UIView()
+    super.init(nibName: nil, bundle: nil)
+}
+
+convenience override init() {
+    self.init(nibName: nil, bundle: nil)
+}
+</code></pre>
+</div>
+
+<hr />
+<p><strong>2014-06-13 C++ 迭代器的++操作</strong></p>
+
+<p>ite为某迭代器，ite++与++ite，在不牵扯到赋值时（如iteNew=ite++），是否等价？</p>
+
+<p>答：不等价，ite++会产生copy操作，++ite不会，后者效率更高。</p>
+
+<p>A ++p returns a reference top, whereas p++ must return a copy ofpholding the old value. Thus, for
+more complicated iterators,++p is likely to be more efficient than p++. 摘自《The C++ Programming Language》</p>
+
+        </div>
+      </div>
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'byron';
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="contact">
+          <p>
+            <a href="/" style="text-decoration: none; margin-right: 5px;">Index</a> |&nbsp;
+            <a href="/feed.xml" target="_blank" style="text-decoration: none; margin-right: 5px;">RSS</a> |&nbsp;
+            <a href="http://weibo.com/zjbzy1314" target="_blank" style="text-decoration: none; margin-right: 5px;">Weibo</a> |&nbsp;
+            <a href="mailto:byron02212012@gmail.com">byron02212012@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!--    <div style="display: none;">
+      <script src="http://s4.cnzz.com/z_stat.php?id=1254574847&web_id=1254574847" language="JavaScript"></script>
+    </div>
+-->
+  </body>
+</html>

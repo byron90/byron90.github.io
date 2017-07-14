@@ -1,0 +1,6 @@
+baseurl: /
+highlighter: rouge
+mardown: redcarpet
+name: ByronTech
+description: Do something interesting.
+url: http://byron.ren

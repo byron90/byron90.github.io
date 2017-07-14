@@ -1,0 +1,426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"quer",
+				"query_db〔function〕"
+			],
+			[
+				"dicNew",
+				"dicNewOne"
+			],
+			[
+				"que",
+				"query_db"
+			],
+			[
+				"di",
+				"dialog_alert_submit"
+			],
+			[
+				"dicRE",
+				"dicReqData"
+			],
+			[
+				"op",
+				"op_emp_id"
+			],
+			[
+				"emp",
+				"employee"
+			],
+			[
+				"Clear",
+				"ClearVIPConfirm"
+			],
+			[
+				"Clo",
+				"ClothesList"
+			],
+			[
+				"strPay",
+				"strPayOrNot"
+			],
+			[
+				"dicOrder",
+				"dicOrderData〔argument〕"
+			],
+			[
+				"dicOr",
+				"dicOrderData"
+			],
+			[
+				"order",
+				"order_submit"
+			],
+			[
+				"dicPay",
+				"dicPayUsage"
+			],
+			[
+				"strTo",
+				"strTodayEnd"
+			],
+			[
+				"dicOrd",
+				"dicOrderSummary"
+			],
+			[
+				"Cu",
+				"CustType〔variable〕"
+			],
+			[
+				"Update",
+				"UpdateVIPOrder〔function〕"
+			],
+			[
+				"obj",
+				"objPayType〔variable〕"
+			],
+			[
+				"One",
+				"OneVIPBeta"
+			],
+			[
+				"weui",
+				"weui_dialog_bd"
+			],
+			[
+				"weui_di",
+				"weui_dialog_bd"
+			],
+			[
+				"gri",
+				"gridCustomer〔variable〕"
+			],
+			[
+				"pay",
+				"pay_grids"
+			],
+			[
+				"tog",
+				"toggleClass〔function〕"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"intal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 539.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Byron/cache_docker/4git/YFWebsite",
+		"/Users/Byron/cache_docker/4git/YFWebsite/static/js"
+	],
+	"file_history":
+	[
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/partpay_order.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/center.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/my_task.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/rio_yf.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/rio_got.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/viptopup.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/neworder.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/yifu.py",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/newvip.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/static/js/rt_mytask.js",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/today_end.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/rio_spider.py",
+		"/Users/Byron/cache_docker/4git/YFWebsite/yfutils.py",
+		"/Users/Byron/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/today_orders.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite/templates/newbrand.html",
+		"/Users/Byron/Codes/github/byblog/css/spider",
+		"/Users/Byron/Codes/github/byblog/_config.yml",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/static/signature/css/signature-pad.css",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/static/weui/css/yfwx.css",
+		"/Users/Byron/Desktop/route.js",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/static/weui/css/weui.min.css",
+		"/Users/Byron/Library/Application Support/Sublime Text 3/Packages/User/Side Bar.sublime-settings",
+		"/Users/Byron/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/static/css/neworer.css",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/vipmodify.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/neworder.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/makeuporder.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/today_orders.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/clothes.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/select_part.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/vip_confirm.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/center.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/viphistory.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/yfutils.py",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/newbrand.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/newvip.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/yifu.py",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/yifu.conf",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/partpay_order.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/searchvip.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/viptopup.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/newapp.py",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/vip_historder.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/today_end.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/brands.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/searchvip_order.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/brand_part.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/emp_active.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/test.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/backend/rule_edit.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/templates/backend/rule_create.html",
+		"/Users/Byron/cache_docker/4git/YFWebsite copy/static/js/dreamart.js",
+		"/Users/Byron/SLProjects/limiclub.sublime-project",
+		"/Users/Byron/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"/Users/Byron/cache_docker/4git/YFWebsite",
+			"/Users/Byron/cache_docker/4git/YFWebsite copy",
+			"/Users/Byron/cache_docker/4git/YFWebsite copy/templates",
+			"/Users/Byron/cache_docker/4git/YFWebsite copy",
+			"/Users/Byron/cache_docker/4git/YFWebsite copy/templates",
+			"/Users/Byron/cache_docker/4git/YFWebsite copy"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"random",
+			"riogot",
+			"请填写正确的手机号码",
+			"length",
+			"none",
+			"addvip",
+			"newvip",
+			"return",
+			"gen_time",
+			"('../",
+			"\n}",
+			"2em",
+			"back",
+			"fade",
+			"}();",
+			"enter",
+			"in",
+			"fade",
+			"e",
+			"anima",
+			"})\n",
+			");\n",
+			"挂起",
+			"已",
+			"strConfFile",
+			"001",
+			"00",
+			"oo1",
+			"001",
+			"part",
+			"PartFee",
+			"Makeup",
+			"makeup",
+			"parseInt",
+			"toInt",
+			"equal",
+			"foreach",
+			"form",
+			"history",
+			"连续",
+			"ClothesList",
+			"ControlledNo",
+			"OneVIP",
+			"center",
+			"	",
+			"/	",
+			"\"center",
+			"/center",
+			"'center",
+			"center"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dreamart.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"_vintageous_last_buffer_search": "40",
+		"_vintageous_last_buffer_search_command": "vi_slash",
+		"_vintageous_last_char_search_command": "vi_f",
+		"_vintageous_last_character_search": "e",
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "/Users/Byron/cache_docker/4git/YFWebsite"
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

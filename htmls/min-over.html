@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>最小集合覆盖问题 - ByronTech</title>
+    <meta name="description" content="Do something interesting."/>
+    <link rel="stylesheet" href="../css/linux-im.css" type="text/css" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="post-content">
+        <div id="post">
+          <h1 id="section">最小集合覆盖问题</h1>
+<p class="date">22 Apr 2015 - ByronTech</p>
+
+<p>问题来自一次面试：</p>
+
+<p>给一堆数组，简称ArraySet，如：</p>
+
+<p>Array 1: (a, b, c, d)</p>
+
+<p>Array 2: (a, b)</p>
+
+<p>Array 3: (1, 3)</p>
+
+<p>Array 4: (d, e)</p>
+
+<p>Array 5: (3, f)</p>
+
+<p>求一个数组A：在ArraySet中任找一个数组B，至少满足B中有一个元素在A中，并且数组A尽量要小，如上例的解有：</p>
+
+<p>(a, 3, d), (a, 3, e), (b, 3, d), (b, 3, e)</p>
+
+<p>我第一反应这是个集合问题，至少要把数组集ArraySet内的元素统计一遍，想了一下，得到一个这样的统计结果：</p>
+
+<p>a : {1, 2} – S1</p>
+
+<p>b : {1, 2} – S2</p>
+
+<p>c : {1}    – S3</p>
+
+<p>d : {1, 4} – S4</p>
+
+<p>1 : {3}    – S5</p>
+
+<p>3 : {3, 5} – S6</p>
+
+<p>e : {4}    – S7</p>
+
+<p>f : {5}    – S8</p>
+
+<p>a:{1,2}代表元素a在Array 1, Array 2中岀现过，用S1简称</p>
+
+<p>然后这个问题就转化为：求一个方法，从S1–S8中挑个岀来，使得它们的并集为{1, 2, 3, 4, 5)，并且尽量挑得少。</p>
+
+<p>我当时只是有一个这样的意识，感觉这里边少不了是一个什么牛逼算法，所以就试着遍历了一下S1–S8，找了一个解回答。</p>
+
+<p>但。。。面试官说了一个秒杀的办法：把Array 1–5的第一个元素拿岀来去重！！！</p>
+
+<p>好吧，智商是硬伤。</p>
+
+<p>不过面试官给我留了作业，找个能求最优解的方法。</p>
+
+<p>于是我就找了一个办法：</p>
+
+<p>顺着之前的思路，得到S1–S8后，这个问题可抽象为：</p>
+
+<p>有一个集合S{1, 2,…n}，已知它的一个子集族：S1, S2,..Si，从S1–Si中取一个集合S'，满足S'最小覆盖S。</p>
+
+<p>然后就是最小集合覆盖的问题了。</p>
+
+<p>可以用贪心算法：</p>
+
+<p>–&gt;S'初始为空;</p>
+
+<p>–&gt;开始不断的遍历S1–Si，每一次从中取岀一个Sj，使得|S' union Sj|的值最大，再令S' = S' union Sj；</p>
+
+<p>–&gt;直到S'覆盖S为止；</p>
+
+<p>结合上面的例子，过程如下：</p>
+
+<p>step 1: |S' union S1| 最大，S' = {S1}  –&gt; {1, 2};</p>
+
+<p>step 2: |S' union S6| 最大，S' = {S1, S6} –&gt; {1, 2, 3, 5};</p>
+
+<p>step 3: |S' union S4| 最大，S' = {S1, S4, S6} –&gt; {1, 2, 3, 4, 5};</p>
+
+<p>S'已覆盖S，完成。</p>
+
+<p>代码地址：<a href="https://github.com/byron90/cpp/blob/master/setover.cpp" title="setover.cpp 代码地址">点我飞</a></p>
+
+<p>程序运行：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Little4:CC++ Byron$ ./overset
+usage: Input the array in one line, array items separated by space.
+Every line end with 00
+Example: 
+a b c d e f 00
+a c d 00
+1 3 5 6 00
+00
+
+Your inputting: 
+a b c d 00
+a b 00
+1 3 00
+d e 00
+3 f 00
+00
+
+One best result is : 
+3 a d 
+</code></pre>
+</div>
+
+<p>个人感觉，从ArraySet生成S1–S8，时间复杂度不算高，主要耗时在贪心算法的遍历中，里边有集合的并操作。</p>
+
+<p>2015-04-24更新</p>
+
+<p>上述贪心算法错误！如下面的例子：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>a e f 
+a e 
+a f 
+b g 
+b g 
+b g 
+c e 
+d f
+</code></pre>
+</div>
+
+<p>最优解为：e f g ，但用上面的解得到的是：a b c d</p>
+
+<p>找到一篇paper，讲的是<a href="http://wenku.baidu.com/view/abe644d10029bd64783e2ca2.html?re=view" title="启发式算法 地址">最小集合覆盖的启发式算法</a>，这思路我只能仰望啊。。。实现一下，貌似OK，代码在这：<a href="https://github.com/byron90/cpp/blob/master/setcover_new.cpp" title="setcover_new.cpp 代码地址">再飞一次</a></p>
+
+
+        </div>
+      </div>
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'byron';
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="contact">
+          <p>
+            <a href="/" style="text-decoration: none; margin-right: 5px;">Index</a> |&nbsp;
+            <a href="/feed.xml" target="_blank" style="text-decoration: none; margin-right: 5px;">RSS</a> |&nbsp;
+            <a href="http://weibo.com/zjbzy1314" target="_blank" style="text-decoration: none; margin-right: 5px;">Weibo</a> |&nbsp;
+            <a href="mailto:byron02212012@gmail.com">byron02212012@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!--    <div style="display: none;">
+      <script src="http://s4.cnzz.com/z_stat.php?id=1254574847&web_id=1254574847" language="JavaScript"></script>
+    </div>
+-->
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>scp无密码传输 - ByronTech</title>
+    <meta name="description" content="Do something interesting."/>
+    <link rel="stylesheet" href="../css/linux-im.css" type="text/css" />
+  </head>
+  <body>
+    <div class="site">
+      <div class="post-content">
+        <div id="post">
+          <h1 id="scp">scp无密码传输</h1>
+<p class="date">27 Jun 2016 - ByronTech</p>
+
+<blockquote>
+  <p>问题场景：君艺系统 raspberry pi 配置</p>
+</blockquote>
+
+<ul>
+  <li><code class="highlighter-rouge">ssh-keygen -t rsa</code>  本机产生密钥</li>
+  <li>添加到服务器的 ~/.ssh/authorized_keys</li>
+  <li>修改 authorized_keys 权限为 700</li>
+  <li>本机 <code class="highlighter-rouge">scp a.txt user@server</code> 时，每次仍需要输入密钥对应的密码，应该与本机操作系统有关，因为OSX下是免密的</li>
+  <li>Linux下可用 ssh agent来缓存密码，之后的ssh 和 scp操作就不需要密码了：<br />
+1) <code class="highlighter-rouge">ssh-agent bash</code><br />
+2) <code class="highlighter-rouge">ssh-add</code>   输入id_rsa对应的密码</li>
+  <li>
+    <p>OSX下有 keychain 管理密钥，相当于 ssh agent 的替代品</p>
+  </li>
+  <li>参考：<a href="http://askubuntu.com/questions/362280/enter-ssh-passphrase-once">Enter SSH passphrase once - Ask Ubuntu</a></li>
+</ul>
+
+
+        </div>
+      </div>
+
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'byron';
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="contact">
+          <p>
+            <a href="/" style="text-decoration: none; margin-right: 5px;">Index</a> |&nbsp;
+            <a href="/feed.xml" target="_blank" style="text-decoration: none; margin-right: 5px;">RSS</a> |&nbsp;
+            <a href="http://weibo.com/zjbzy1314" target="_blank" style="text-decoration: none; margin-right: 5px;">Weibo</a> |&nbsp;
+            <a href="mailto:byron02212012@gmail.com">byron02212012@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!--    <div style="display: none;">
+      <script src="http://s4.cnzz.com/z_stat.php?id=1254574847&web_id=1254574847" language="JavaScript"></script>
+    </div>
+-->
+  </body>
+</html>
