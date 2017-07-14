@@ -42,7 +42,6 @@ hr {
 }
 
 .title a{
-    font-family: 'FZYanSongS';
     color: #EE4F3A;
     text-decoration: none;
     font-size: 50px;
@@ -113,7 +112,6 @@ a {
 }
 
 #post h1,h2,h3 {
-    font-family: 'FZYanSongS';
     font-size: 35px;
     word-break: break-all;
     line-height: 1.5;
@@ -200,5 +198,4 @@ blockquote {
 
 strong {
   color: #EE4F3A;
-  font-family: 'FZYanSongS';
 }
