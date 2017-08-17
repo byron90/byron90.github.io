@@ -109,10 +109,11 @@ a {
     color: #2f2f2f;
     font-size: 17px;
     font-weight: 100;
+    line-height: 2em;
 }
 
 #post h1,h2,h3 {
-    font-size: 35px;
+    font-size: 28px;
     word-break: break-all;
     line-height: 1.5;
     color: #EE4F3A;
@@ -157,8 +158,8 @@ blockquote {
   font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;
-  white-space: nowrap;
   border-radius: 4px;
+  word-break: break-word;
 }
 
 #post pre code {
